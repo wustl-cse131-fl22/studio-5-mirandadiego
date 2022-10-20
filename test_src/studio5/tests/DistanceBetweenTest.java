@@ -12,7 +12,20 @@ import static org.junit.Assert.*;
  * Methods that test the distanceBetween() method
  */
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class DistanceBetweenTest {
+public class DistanceBetweenTest 
+
+{
+	
+public static double distanceBetween (double x1, double y1, double x2, double y2)
+{
+	double xOperate = x2-x1;
+	double xsubtract = Math.pow(xOperate, 2);
+	double yOperate = y2-y1;
+	double ysubtract = Math.pow(yOperate, 2);
+	double sqrt = Math.sqrt(xsubtract + ysubtract);
+	System.out.println(sqrt);
+	return sqrt;
+}
 
 	/**
 	 * Test the distance between (1,0) and (1,0) is ~0.0
